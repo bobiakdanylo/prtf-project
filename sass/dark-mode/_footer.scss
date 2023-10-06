@@ -1,0 +1,28 @@
+.dark-mode-info-list > .info__item > .info__title {
+    color: white;
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .info__link {
+    color: rgb(169, 169, 169);
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .info__link:hover {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .contacts > .contacts__item {
+    border: none;
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .contacts > .contacts__item:hover {
+    background-color: rgb(57, 57, 57);
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .contacts > .contacts__item > .contacts__svg {
+    fill: white;
+}
+
+.dark-mode-info-list > .info__item > .info__title ~ .contacts > .contacts__item:hover > .contacts__svg {
+    fill: var(--main-color);
+}

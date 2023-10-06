@@ -1,0 +1,22 @@
+.content {
+    padding: 30px 50px 30px 50px;
+    background-color: #F5F4FA;
+    margin-top: 30px;
+    width: 100%;
+    @media screen and (min-width: 320px) and (max-width: 678px) {
+        margin-top: 0;
+        padding: 10px;
+        width: 100%;
+    }
+}
+
+.content__title {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.background-color {
+    background-color: #F5F4FA;
+}

@@ -1,0 +1,34 @@
+.dark-mode-mobile-modal {
+    background-color: #272a2b;
+}
+
+.dark-mode-mobile-modal > .modal-overline {
+    border-bottom: 1px solid #202123;
+}
+
+.dark-mode-mobile-modal > .modal-overline > .modal-title {
+    color: white;
+}
+
+.dark-mode-mobile-modal > .modal-overline > .mobile-modal-close {
+    background-color: #272a2b;
+}
+
+.dark-mode-mobile-modal > .modal-overline > .mobile-modal-close > .modal-svg  {
+    fill: white;
+}
+
+.dark-mode-mobile-modal > .sidebar-mobile > .sidebar__list > .sidebar__list-item > .categories__name,
+.dark-mode-mobile-modal > .sidebar-mobile > .sidebar__list > .sidebar__list-item > .categories__name > .categories__svg-before {
+    color: white;
+    fill: white;
+}
+
+.dark-mode-mobile-modal > .modal-overline > .modal__list > .modal__list-item > button {
+    background-color: #272a2b;
+    border: none;
+}
+
+.dark-mode-mobile-modal > .modal-overline > .modal__list > .modal__list-item > button > .mobile__btn-svg {
+    fill: white;
+}

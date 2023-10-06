@@ -1,0 +1,69 @@
+.dark-mode-header {
+    background-color: #272a2b;
+    color: white;
+    border-bottom: 1px solid #202123;
+}
+
+.dark-mode-logo {
+    color: white;
+}
+
+.dark-mode-search,
+.dark-mode-search:focus {
+    border: 1px solid rgb(57, 57, 57);
+    color: white;
+    box-shadow: none;
+    background-color: #272a2b;
+}
+
+.dark-mode-search ~ .search__svg {
+    transition: fill 150ms linear;
+    fill: white;
+}
+
+.dark-mode-search-btn {
+    border: none;
+    background-color: rgb(57, 57, 57);
+    color: white;
+}
+
+.dark-mode-search:focus ~ .search__btn {
+    border: none;
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn {
+    background-color: #272a2b;
+    border: none;
+    transition: background-color 150ms linear;
+}
+
+.dark-mode-nav-btns > .nav__list-item-mobile > .mobile-modal-open {
+    background-color: #272a2b;
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn > .nav__btn-svg,
+.dark-mode-nav-btns > .nav__list-item-mobile > .mobile-modal-open > .nav__btn-svg {
+    fill: white;
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn-focused {
+    box-shadow: none;
+    background-color: rgb(57, 57, 57);
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn-focused > .nav__btn-svg {
+    fill: var(--main-color);
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn:hover > .nav__btn-svg {
+    fill: var(--main-color);
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn:hover {
+    background-color: rgb(57, 57, 57);
+    border: none;
+}
+
+.dark-mode-nav-btns > .nav__list-item > .nav__btn:focus {
+    outline: none;
+}

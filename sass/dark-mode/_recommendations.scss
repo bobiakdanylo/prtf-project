@@ -1,0 +1,49 @@
+.dark-mode-content {
+    background-color: #202123;
+}
+
+.dark-mode-content-title {
+    color: white;
+}
+
+.dark-mode-cards > .recommendations__item {
+    background-color: #272a2b;
+    outline: none;
+    box-shadow: none;
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__title {
+    color: white;
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__buy > .card__link {
+    color: white;
+    background-color: #272a2b;
+    border: none;
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__buy > .card__price {
+    color: var(--main-color);
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__buy > .card__price > .currency {
+    color: white;
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__buy > .card__link {
+    outline: 1px solid rgb(57, 57, 57);
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__buy > .card__link:hover {
+    background-color: rgb(57, 57, 57);
+    color: var(--main-color);
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__description  {
+    color: rgb(169, 169, 169);
+}
+
+.dark-mode-cards > .recommendations__item > .card > .card__title:hover {
+    color: var(--main-color);
+    text-decoration: underline;
+}

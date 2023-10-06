@@ -1,0 +1,68 @@
+.dark-mode-auth {
+    background-color: #272a2b;
+    & > .auth__title-block {
+        border-bottom: 1px solid #202123;
+    }
+    & > .auth__title-block > .auth__title-lgn,
+    & > .auth__title-block > .auth__title-sgn {
+    color: white;
+    }
+    & > .auth__title-block > .auth__title-btn {
+    background-color: #272a2b;
+    }
+
+    & > .auth__title-block > .auth__title-btn > .auth__title-svg {
+    fill: white;
+    }
+
+    & > .auth__title-block > .auth__title-btn:hover {
+    background-color: rgb(57, 57, 57);
+    }
+
+    & > .auth__title-block > .auth__title-btn:hover > .auth__title-svg {
+    fill: var(--main-color);
+    }
+
+    & > .auth__forms > .auth__switcher > .auth__btn {
+    color: white;
+      text-decoration: underline;
+}
+
+    & > .auth__forms > .auth__switcher > .current-color {
+    background-color: white;
+      padding: 3px;
+    color: #272a2b;
+    text-decoration: none;
+}
+
+    & > .auth__forms > .auth__lgn-switch-block > .auth__login > .auth__login-input,
+    & > .auth__forms > .auth__sgn-switch-block > .auth__signup > .auth__signup-input  {
+    background-color: #272a2b;
+    border: 1px solid rgb(57, 57, 57);
+    color: white;
+    }
+
+    & > .auth__forms > .auth__lgn-switch-block > .auth__login > .auth__login-btn,
+    & > .auth__forms > .auth__sgn-switch-block > .auth__signup > .auth__signup-btn {
+      border: 1px solid rgb(57, 57, 57);
+      color: white;
+    }
+
+    & > .auth__forms > .auth__lgn-switch-block > .auth__login > .auth__login-btn:hover,
+    & > .auth__forms > .auth__sgn-switch-block > .auth__signup > .auth__signup-btn:hover {
+      border: none;
+    }
+
+    & > .auth__forms > .auth__lgn-switch-block > .auth__login > .auth__login-link {
+    color: white;
+    }
+
+    & > .auth__forms > .auth__lgn-switch-block > .auth__login > .auth__login-link:hover {
+    color: var(--main-color);
+    }
+}
+
+
+
+
+

@@ -1,0 +1,65 @@
+.dark-mode-cart {
+    background-color: #272a2b;
+    & > .cart__overline {
+        border-bottom: none;
+    }
+    & > .cart__overline > .cart__title {
+        color: white;
+    }
+    & > .cart__overline > .cart-modal-close {
+        background-color: #272a2b;
+    }
+    & > .cart__overline > .cart-modal-close > .cart-modal__svg {
+        fill: white;
+    }
+    & > .cart__overline > .cart-modal-close:hover {
+        background-color: rgb(57, 57, 57);
+    }
+    & > .cart__overline > .cart-modal-close:hover > .cart-modal__svg {
+        fill: var(--main-color);
+    }
+    & > .cart__goods > .good {
+        border-bottom: 1px solid #202123;
+    }
+    & > .cart__goods > .good > .good__title,
+    & > .cart__goods > .good > .good__quantity,
+    & > .cart__goods > .good > .good__price > .currency {
+        color: white;
+    }
+    & > .cart__goods > .good > .good__btn {
+        background-color: #272a2b;
+    }
+    & > .cart__goods > .good > .good__btn > .good__svg {
+        fill: white;
+    }
+    & > .cart__goods > .good > .good__btn:hover {
+        background-color: rgb(57, 57, 57);
+    }
+    & > .cart__goods > .good > .good__btn:hover > .good__svg {
+        fill: var(--main-color);
+    }
+    & > .goods__total > .goods__btn-cnt,
+    & > .goods__total > .goods__total-price {
+        color: white;
+    }
+    & > .goods__total > .goods__btn-buy {
+        background-color: #272a2b;
+        border: 1px solid var(--main-color);
+        transition: background-color 150ms linear;
+    }
+    & > .goods__total > .goods__btn-buy:hover {
+        background-color: var(--main-color);
+    }
+    & > .cart__goods::-webkit-scrollbar {
+        width: 15px;
+    }
+    & > .cart__goods::-webkit-scrollbar-track {
+        background-color: #272a2b;
+        border-radius: 4px;
+    }
+    & > .cart__goods::-webkit-scrollbar-thumb {
+        background-color: whitew;
+        border-radius: 8px;
+        border: 4px solid #272a2b;
+    }
+}

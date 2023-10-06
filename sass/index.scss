@@ -1,0 +1,25 @@
+@import './global/global';
+
+@import './header';
+@import './sidebar';
+@import './categories';
+@import './offers';
+@import './content';
+@import './recommendations';
+@import './footer';
+
+@import './modal-windows/cart';
+@import './modal-windows/notifications';
+@import './modal-windows/auth';
+@import './modal-windows/mobile-btn';
+
+@import './dark-mode/body';
+@import './dark-mode/header';
+@import './dark-mode/sidebar';
+@import './dark-mode/offers';
+@import './dark-mode/recommendations';
+@import './dark-mode/footer';
+@import './dark-mode/cart';
+@import './dark-mode/notifications';
+@import './dark-mode/auth';
+@import './dark-mode/mobile-modal';

@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css" integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+    <title>Online Store</title>
+    <script defer src="./js/cart-modal.js"></script>
+    <script defer src="./js/theme.js"></script>
+    <script defer src="./js/notifications-modal.js"></script>
+    <script defer src="./js/auth-modal.js"></script>
+    <script defer src="./js/slider.js"></script>
+    <script defer src="./js/monile-modal.js"></script>
+</head>
+<body>
+    <header class="header container">
+        <a href="index.html" class="logo">Online<span class="logo-style">Store</span></a>
+        <div class="search">
+            <form action="#" class="search__form">
+                <input type="text" class="search__input" placeholder="I'm looking for..." name="search" required
+                    autocomplete="off">
+                <svg width="18" height="18" class="search__svg">
+                    <use href="./images/images__svg/search.svg#search"></use>
+                </svg>
+                <button type="submit" class="search__btn">Search</button>
+            </form>
+        </div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list-item-mobile">
+                    <button type="button" class="mobile-modal-open">
+                        <svg class="nav__btn-svg" width="45" height="45">
+                            <use href="./images/images__svg/nav__items.svg#bars"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button type="button" class="nav__btn cart-modal-open">
+                        <svg class="nav__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#basket"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button type="button" class="nav__btn theme-switcher-js">
+                        <svg class="nav__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/theme-switcher.svg#theme-white" class="theme-svg-dflt">
+                            </use>
+                            <use href="./images/images__svg/theme-switcher.svg#theme-black"
+                                class="theme-svg display-none"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button type="button" class="nav__btn notifications-modal-open">
+                        <svg class="nav__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#notifications"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="nav__list-item">
+                    <button type="submit" class="nav__btn auth-modal-open">
+                        <svg class="nav__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#user"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="head container">
+            <div class="sidebar">
+                <ul class="sidebar__list">
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#pc"></use>
+                            </svg>
+                            <span class="categories__string">PC, Laptop</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#phone"></use>
+                            </svg>
+                            <span class="categories__string">Mobile, Tablet</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#gaming"></use>
+                            </svg>
+                            <span class="categories__string">Gaming</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#office"></use>
+                            </svg>
+                            <span class="categories__string">Office</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#appleinc"></use>
+                            </svg>
+                            <span class="categories__string">Brands</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#for-home"></use>
+                            </svg>
+                            <span class="categories__string">For Home</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#components"></use>
+                            </svg>
+                            <span class="categories__string">Components</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#tv"></use>
+                            </svg>
+                            <span class="categories__string">TV</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#steam"></use>
+                            </svg>
+                            <span class="categories__string">Games</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                    <li class="sidebar__list-item">
+                        <a href="/" class="categories__name">
+                            <svg width="16" height="16" class="categories__svg-before">
+                                <use href="./images/images__svg/categories-before.svg#sale"></use>
+                            </svg>
+                            <span class="categories__string">Sale</span>
+                            <svg width="16" height="16" class="categories__svg">
+                                <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                            </svg>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+            <div class="offers">
+                <div class="offers-slider">
+                    <button type="button" class="offers__btn slider-prev-js">
+                        <svg width="26" height="26" class="offers__svg">
+                            <use href="./images/images__svg/slider-arrows.svg#left"></use>
+                        </svg>
+                    </button>
+                    <div class="slider-line">
+                        <a href="https://www.apple.com/" target="_blank" class="slider-link">
+                            <img src="./images/offers-recomendation.jpg" class="slider-image" alt="offers images">
+                        </a>
+                        <a href="https://rog.asus.com/ru/laptops/rog-strix/rog-strix-g17-2023-series/" target="_blank"
+                            class="slider-link">
+                            <img src="./images/offers-recomendation-2.jpg" class="slider-image" alt="offers images">
+                        </a>
+                        <a href="https://www.razer.com/" target="_blank" class="slider-link">
+                            <img src="./images/offers-recomendation-3.jpg" class="slider-image" alt="offers images">
+                        </a>
+                        <a href="#" target="_blank" class="slider-link-mobile">
+                            <img src="./images/offers-mobile.jpg" class="slider-image" alt="offers images">
+                        </a>
+                    </div>
+                    <button type="button" class="offers__btn slider-next-js">
+                        <svg width="26" height="26" class="offers__svg">
+                            <use href="./images/images__svg/slider-arrows.svg#right"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <p class="content__title">For you</p>
+            <div class="recommendations">
+                <ul class="recommendations__list">
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/win11-card.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">WINDOWS 11 PROFESSIONAL 32/64-BIT</a>
+                            <p class="card__description">Electronic license ESD</p>
+                            <div class="card__buy">
+                                <a href="#" class="card__link">Already in your cart</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/mouse-card.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">HyperX Pulsefire Haste Mouse</a>
+                            <p class="card__description">(4P5E3AA) Black/Red</p>
+                            <div class="card__buy">
+                                <a href="#" class="card__link">Already in your cart</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/smartphone-samsung-s23-ultra.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">Mobilní telefon Samsung Galaxy S23 Ultra</a>
+                            <p class="card__description">1 TB / černá</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">1292,87<span class="currency">$</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/pc-hp.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">HP Pro 400 G9 Černá</a>
+                            <p class="card__description">MTzáruka 3 roky ON-SITE</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">473,62<span class="currency">$</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/wifi-router.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">WiFi router TP-Link</a>
+                            <p class="card__description">Archer C1200, AC1200</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">43,05<span class="currency">$</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/tv-card.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">65" Samsung UE65CU7172</a>
+                            <p class="card__description">LED SMART 4K resolution (3840 x 2160 px)</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">Already in your cart</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/cpu.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">Intel Core i7-13700K</a>
+                            <p class="card__description">16 cores, 24 threads, 3.4GHz (TDP 253W), Boost 5.4GHz</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">503,79$</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/apple-watch.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">Apple Watch Series 9</a>
+                            <p class="card__description">45mm Dark Ink Aluminum with Dark Ink Sport Band - M/L</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">529,65<span class="currency">$</span></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="recommendations__item">
+                        <div class="card">
+                            <img src="./images/projector.png" alt="product" class="card__img">
+                            <a href="/index.html" class="card__title">XGIMI Horizon Ultra</a>
+                            <p class="card__description">Projector DLP LED laser, 4K, native resolution 3840 × 2160,
+                                16:9, 3D</p>
+                            <div class="card__buy">
+                                <a href="./index.html" class="card__link">More Info</a>
+                                <p class="card__price">2154,36<span class="currency">$</span></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer class="footer container">
+        <div class="info">
+            <ul class="info__list">
+                <li class="info__item">
+                    <p class="info__title">For buyers</p>
+                    <a href="./index.html" class="info__link">Privacy Policy</a>
+                    <a href="./index.html" class="info__link">Information for buyers</a>
+                    <a href="./index.html" class="info__link">Recommendations for safe shopping</a>
+                    <a href="./index.html" class="info__link">Terms of use</a>
+                </li>
+                <li class="info__item">
+                    <p class="info__title">For sellers</p>
+                    <a href="./index.html" class="info__link">Privacy Policy</a>
+                    <a href="./index.html" class="info__link">Information for sellers</a>
+                    <a href="./index.html" class="info__link">How to sell in this store</a>
+                    <a href="./index.html" class="info__link">Terms of use</a>
+                </li>
+                <li class="info__item contacts-item">
+                    <p class="info__title">About us</p>
+                    <div class="contacts">
+                        <a href="./index.html" class="contacts__item">
+                            <svg width="20" height="20" class="contacts__svg">
+                                <use href="./images/images__svg/footer-contacts.svg#youtube"></use>
+                            </svg>
+                        </a>
+                        <a href="./index.html" class="contacts__item">
+                            <svg width="20" height="20" class="contacts__svg">
+                                <use href="./images/images__svg/footer-contacts.svg#instagram"></use>
+                            </svg>
+                        </a>
+                        <a href="./index.html" class="contacts__item">
+                            <svg width="20" height="20" class="contacts__svg">
+                                <use href="./images/images__svg/footer-contacts.svg#facebook"></use>
+                            </svg>
+                        </a>
+                        <a href="./index.html" class="contacts__item">
+                            <svg width="20" height="20" class="contacts__svg">
+                                <use href="./images/images__svg/footer-contacts.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </li>
+                <li class="info__item">
+                    <p class="info__title">Partners</p>
+                    <a href="https://www.apple.com/" target="_blank" class="info__link">Apple</a>
+                    <a href="https://www.samsung.com/" target="_blank" class="info__link">Samsung</a>
+                    <a href="https://www.asus.com/" target="_blank" class="info__link">Asus</a>
+                    <a href="https://www.lenovo.com/" target="_blank" class="info__link">Lenovo</a>
+                    <a href="https://www.razer.com/" target="_blank" class="info__link">Razer</a>
+                    <a href="https://store.steampowered.com/" target="_blank" class="info__link">Steam</a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div class="cart visibility-hidden">
+        <div class="cart-modal">
+            <div class="cart__overline">
+                <p class="cart__title">Your goods</p>
+                <button type="button" class="cart-modal-close">
+                    <svg width="16" height="16" class="cart-modal__svg">
+                        <use href="./images/images__svg/modal-close-btn.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="cart__goods">
+                <div class="good">
+                    <img src="./images/lptp-card.png" alt="your good" class="good__img">
+                    <a href="#" class="good__title">Lenovo Legion 5 15ACH6H 15,6" AMD Ryzen 7 32 GB / 512 GB</a>
+                    <p class="good__quantity">x1</p>
+                    <button type="button" class="good__btn">
+                        <svg width="16" height="16" class="good__svg">
+                            <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                        </svg>
+                    </button>
+                    <p class="good__price">1587,20<span class="currency">$</span></p>
+                </div>
+                <div class="good">
+                    <img src="./images/tv-card.png" alt="your good" class="good__img">
+                    <a href="#" class="good__title">65" Samsung UE65CU7172</a>
+                    <p class="good__quantity">x1</p>
+                    <button type="button" class="good__btn">
+                        <svg width="16" height="16" class="good__svg">
+                            <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                        </svg>
+                    </button>
+                    <p class="good__price">598,21<span class="currency">$</span></p>
+                </div>
+                <div class="good">
+                    <img src="./images/gpu-card.png" alt="your good" class="good__img">
+                    <a href="#" class="good__title">NVIDIA QUADRO RTX 5000</a>
+                    <p class="good__quantity">x1</p>
+                    <button type="button" class="good__btn">
+                        <svg width="16" height="16" class="good__svg">
+                            <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                        </svg>
+                    </button>
+                    <p class="good__price">1707,40<span class="currency">$</span></p>
+                </div>
+                <div class="good">
+                    <img src="./images/win11-card.png" alt="your good" class="good__img">
+                    <a href="#" class="good__title">WINDOWS 11 PROFESSIONAL 32/64-BIT - Electronic license ESD</a>
+                    <p class="good__quantity">x1</p>
+                    <button type="button" class="good__btn">
+                        <svg width="16" height="16" class="good__svg">
+                            <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                        </svg>
+                    </button>
+                    <p class="good__price">25,10<span class="currency">$</span></p>
+                </div>
+                <div class="good">
+                    <img src="./images/mouse-card.png" alt="your good" class="good__img">
+                    <a href="#" class="good__title">HyperX Pulsefire Haste Mouse (4P5E3AA) Black/Red</a>
+                    <p class="good__quantity">x1</p>
+                    <button type="button" class="good__btn">
+                        <svg width="16" height="16" class="good__svg">
+                            <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                        </svg>
+                    </button>
+                    <p class="good__price">42,72<span class="currency">$</span></p>
+                </div>
+            </div>
+            <div class="goods__total">
+                <button type="button" class="goods__btn-cnt">Continue shopping</button>
+                <p class="goods__total-price">Total price: <span class="price-color">3960,63</span>$</p>
+                <button type="button" class="goods__btn-buy">Buy</button>
+            </div>
+        </div>
+    </div>
+    <div class="notifications">
+        <div class="notifications-modal">
+            <div class="notification">
+                <img src="./images/lptp-card.png" class="notification__img" alt="">
+                <button type="button" class="notification__clear-btn">
+                    <svg width="18" height="18" class="notification__clear-svg">
+                        <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                    </svg>
+                </button>
+                <p class="notifitacion__price"><span class="notifitacion__price-sale">1699$</span> 1399$</p>
+                <a href="#" class="notifitacion__more-info">More Info</a>
+                <a href="#" class="notifications-empty__title">Lenovo Legion 5 15ACH6H</a>
+                <p class="notifitacion__description">RTX 3060TI Laptop, Intel core i7-12600H, 512GB SSD / 1TB HDD</p>
+            </div>
+            <div class="notification">
+                <img src="./images/xiaomi-phone.png" class="notification__img" alt="">
+                <button type="button" class="notification__clear-btn">
+                    <svg width="18" height="18" class="notification__clear-svg">
+                        <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                    </svg>
+                </button>
+                <p class="notifitacion__price"><span class="notifitacion__price-sale">399$</span> 199$</p>
+                <a href="#" class="notifitacion__more-info">More Info</a>
+                <a href="#" class="notifications-empty__title">Xiaomi Redmi Note 12 Pro</a>
+                <p class="notifitacion__description">8GB / 256GB, 120 Hz</p>
+            </div>
+            <div class="notification">
+                <img src="./images/gaming-pc.png" class="notification__img" alt="">
+                <button type="button" class="notification__clear-btn">
+                    <svg width="18" height="18" class="notification__clear-svg">
+                        <use href="./images/images__svg/modal-close-btn.svg#bin"></use>
+                    </svg>
+                </button>
+                <p class="notifitacion__price"><span class="notifitacion__price-sale">1099$</span> 499$</p>
+                <a href="#" class="notifitacion__more-info">More Info</a>
+                <a href="#" class="notifications-empty__title">Lenovo Gaming PC</a>
+                <p class="notifitacion__description">RTX 4090, Intel core i9-13900KF, 1 TB SSD / 2TB HDD</p>
+            </div>
+        </div>
+    </div>
+    <div class="auth visibility-hidden">
+        <div class="auth__modal-box">
+            <div class="auth__title-block">
+                <p class="auth__title-lgn">Nice to see you again<span>&#128147;</span></p>
+                <p class="auth__title-sgn display-none">Let's create an account<span>&#128126;</span></p>
+                <button type="button" class="auth__title-btn auth-modal-close">
+                    <svg width="16" height="16" class="auth__title-svg">
+                        <use href="./images/images__svg/modal-close-btn.svg#close"></use>
+                    </svg>
+                </button>
+            </div>
+            <div class="auth__forms">
+                <div class="auth__switcher">
+                    <button type="button" class="auth__btn current-color">Sign In</button>
+                    <button type="button" class="auth__btn switcher-js">Sign Up</button>
+                </div>
+                <div class="auth__lgn-switch-block">
+                    <form action="#" class="auth__login">
+                        <input type="text" name="username" placeholder="Username or Email" autocomplete="off" required
+                            class="auth__login-input">
+                        <input type="password" name="password" placeholder="Password" autocomplete="off" required
+                            class="auth__login-input">
+                        <button type="submit" class="auth__login-btn">Sign In</button>
+                        <a href="#" class="auth__login-link">Forgot password</a>
+                    </form>
+                </div>
+                <div class="auth__sgn-switch-block display-none">
+                    <form action="#" class="auth__signup">
+                        <input type="text" name="username" placeholder="Username" autocomplete="off" required
+                            class="auth__signup-input">
+                        <input type="email" name="email" placeholder="Email" autocomplete="off" required
+                            class="auth__signup-input">
+                        <input type="password" name="password" placeholder="Password" autocomplete="off" required
+                            class="auth__signup-input">
+                        <button type="submit" class="auth__signup-btn">Sign Up</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mobile-modal visibility-hidden">
+        <div class="modal-overline">
+            <p class="modal-title">Categories</p>
+            <ul class="modal__list">
+                <li class="modal__list-item-mobile">
+                    <button type="button" class="mobile-modal-open">
+                        <svg class="nav__btn-svg" width="45" height="45">
+                            <use href="./images/images__svg/nav__items.svg#bars"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="modal__list-item">
+                    <button type="button" class="nav__btn mobile-cart-modal-open">
+                        <svg class="mobile__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#basket"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="modal__list-item">
+                    <button type="button" class="nav__btn mobile-theme-switcher-js">
+                        <svg class="mobile__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/theme-switcher.svg#theme-white" class="theme-svg-dflt">
+                            </use>
+                            <use href="./images/images__svg/theme-switcher.svg#theme-black"
+                                class="theme-svg display-none"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="modal__list-item">
+                    <button type="button" class="nav__btn mobile-notifications-modal-open">
+                        <svg class="mobile__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#notifications"></use>
+                        </svg>
+                    </button>
+                </li>
+                <li class="modal__list-item">
+                    <button type="submit" class="nav__btn mobile-auth-modal-open">
+                        <svg class="mobile__btn-svg" width="20" height="20">
+                            <use href="./images/images__svg/nav__items.svg#user"></use>
+                        </svg>
+                    </button>
+                </li>
+            </ul>
+            <button type="button" class="mobile-modal-close">
+                <svg width="25" height="25" class="modal-svg">
+                    <use href="./images/images__svg/modal-close-btn.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="sidebar-mobile">
+            <ul class="sidebar__list">
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#pc"></use>
+                        </svg>
+                        <span class="categories__string">PC, Laptop</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#phone"></use>
+                        </svg>
+                        <span class="categories__string">Mobile, Tablet</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#gaming"></use>
+                        </svg>
+                        <span class="categories__string">Gaming</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#office"></use>
+                        </svg>
+                        <span class="categories__string">Office</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#appleinc"></use>
+                        </svg>
+                        <span class="categories__string">Brands</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#for-home"></use>
+                        </svg>
+                        <span class="categories__string">For Home</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#components"></use>
+                        </svg>
+                        <span class="categories__string">Components</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#tv"></use>
+                        </svg>
+                        <span class="categories__string">TV</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#steam"></use>
+                        </svg>
+                        <span class="categories__string">Games</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+                <li class="sidebar__list-item">
+                    <a href="/" class="categories__name">
+                        <svg width="16" height="16" class="categories__svg-before">
+                            <use href="./images/images__svg/categories-before.svg#sale"></use>
+                        </svg>
+                        <span class="categories__string">Sale</span>
+                        <svg width="16" height="16" class="categories__svg">
+                            <use href="./images/images__svg/categories-arrow.svg#categories-arrow"></use>
+                        </svg>
+                    </a>
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

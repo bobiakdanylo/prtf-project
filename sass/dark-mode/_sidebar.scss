@@ -1,0 +1,18 @@
+.dark-mode-sidebar-items > .sidebar__list-item > .categories__name > .categories__svg-before,
+.dark-mode-sidebar-items > .sidebar__list-item > .categories__name > .categories__svg,
+.dark-mode-sidebar-items > .sidebar__list-item > .categories__name > .categories__string {
+    fill: white;
+    color: white;
+}
+
+.dark-mode-sidebar-items > .sidebar__list-item:hover > .categories__name > .categories__svg-before,
+.dark-mode-sidebar-items > .sidebar__list-item:hover > .categories__name > .categories__svg,
+.dark-mode-sidebar-items > .sidebar__list-item:hover > .categories__name > .categories__string {
+    fill: var(--main-color);
+    color: var(--main-color);
+}
+
+.dark-mode-sidebar-items > .sidebar__list-item:hover {
+    background-color: rgb(57, 57, 57);
+}
+

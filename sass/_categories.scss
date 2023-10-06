@@ -1,0 +1,34 @@
+.categories__name {
+    width: 100%;
+    color: rgb(57, 57, 57);
+    display: flex;
+    flex-wrap: nowrap;
+    font-family: var(--font-family);
+    font-weight: 200;
+    font-size: 16px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media screen and (min-width: 320px) and (max-width: 1200px) {
+        justify-content: flex-start;
+    }
+}
+
+.categories__svg-before {
+    fill: rgb(57, 57, 57);
+}
+
+.categories__string {
+    text-align-last: left;
+    margin-right: 50px;
+    margin-left: 7px;
+}
+
+.categories__svg {
+    fill: rgb(57, 57, 57);
+    margin-left: auto;
+    @media screen and (min-width: 320px) and (max-width: 1200px) {
+        display: none;
+    }
+}
